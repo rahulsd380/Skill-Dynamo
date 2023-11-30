@@ -3,7 +3,7 @@
 Welcome to my client-side project! This project is based on a student and class management where student can enroll course and instructor can add new course/class.
 
 ## Live Link
-You can access the live version of this project here: [View Site](https://food-sharing-b4e8a.web.app/)
+You can access the live version of this project here: [View Site](https://skill-dynamo.web.app/)
 
 ## Project Description
 "Skill Dynamo revolutionizes online learning, offering an expansive spectrum of courses to fuel your growth. Dive into coding, design, finance, and more on our dynamic platform. Unleash your potential through expert-led classes, interactive content, and personalized pathways. Join a community of learners, chart your educational journey, and acquire skills that propel you toward success. Experience a transformative approach to learning, tailored to match your unique aspirations and ambitions, exclusively at Skill Dynamo."
