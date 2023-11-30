@@ -78,11 +78,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <UserDashboard></UserDashboard>
+        element: <PrivateRoute><UserDashboard></UserDashboard></PrivateRoute>
       },
       {
         path: '/becomeTeacherForm',
-        element: <BecomeTeacherForm></BecomeTeacherForm>
+        element: <PrivateRoute><BecomeTeacherForm></BecomeTeacherForm></PrivateRoute>
       },
     ]
   },
@@ -94,16 +94,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'addClass',
-        element: <AddClass></AddClass>
+        element: <PrivateRoute><AddClass></AddClass></PrivateRoute>
       },
       {
         path: 'myClass',
-        element: <MyClasses></MyClasses>
+        element: <PrivateRoute><MyClasses></MyClasses></PrivateRoute>
 
       },
       {
         path: 'myClassesDetails/:id',
-        element: <MyClassesDetails></MyClassesDetails>,
+        element: <PrivateRoute><MyClassesDetails></MyClassesDetails></PrivateRoute>,
         loader: ({ params }) => fetch(`https://skill-dynamo-server.vercel.app/allClasses/${params.id}`)
       },
       {

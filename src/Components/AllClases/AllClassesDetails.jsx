@@ -58,14 +58,14 @@ const AllClassesDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="max-w-6xl mx-auto py-10">
-        <div className="bg-gray-700 p-10 grid grid-cols-2 gap-10 items-center rounded-xl">
+      <div className="max-w-6xl mx-auto py-10 px-5 md:px-0">
+        <div className="bg-blue-950 p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center rounded-xl border border-blue-400">
           <div className="">
             <div className="flex items-center">
               <div className="w-40">
                 <Lottie animationData={anouncement}></Lottie>
               </div>
-              <h1 className="text-5xl font-bold bg-gradient-to-br from-sky-500  to-sky-800 bg-clip-text text-transparent">
+              <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-br from-sky-500  to-sky-800 bg-clip-text text-transparent">
                 {title}
               </h1>
             </div>
@@ -93,13 +93,13 @@ const AllClassesDetails = () => {
 
             <div className="grid grid-cols-3 gap-5 border border-blue-400">
               <div className=" p-3 border-r-2 border-blue-400 flex justify-center">
-                <p className="text-gray-200">{instructorName}</p>
+                <p className="text-gray-200 text-xs md:text-base">{instructorName}</p>
               </div>
               <div className=" p-3 border-r-2 border-blue-400 flex justify-center">
-                <p className="text-gray-200">{email}</p>
+                <p className="text-gray-200 text-xs md:text-base">{email}</p>
               </div>
               <div className=" p-3 border-r-2 border-blue-400 flex justify-center">
-                <p className="text-blue-400 text-center text-lg font-semibold">
+                <p className="text-blue-400 text-center text-lg font-semibold text-xs md:text-base">
                   <CountUp end={89} duration={5} />+
                 </p>
               </div>
@@ -107,8 +107,8 @@ const AllClassesDetails = () => {
 
             <div className="flex items-center gap-20 py-3">
               <div className="flex items-center gap-4">
-                <IoPricetagsSharp className="text-3xl text-blue-400"></IoPricetagsSharp>
-                <h1 className="text-2xl font-bold text-gray-200">$ {price}</h1>
+                <IoPricetagsSharp className="text-xl md:text-3xl text-blue-400"></IoPricetagsSharp>
+                <h1 className="text-lg md:text-2xl font-bold text-gray-200">$ {price}</h1>
               </div>
 
               <div className="px-3 py-3 flex justify-center">
@@ -121,7 +121,7 @@ const AllClassesDetails = () => {
                   className="flex items-center gap-3 tooltip"
                 >
                   <MdOutlineOndemandVideo className="text-4xl font-bold text-blue-400"></MdOutlineOndemandVideo>
-                  <p className="text-gray-200 text-2xl font-bold">
+                  <p className="text-gray-200 text-lg md:text-2xl font-bold">
                     Course Intro Video
                   </p>
                 </button>

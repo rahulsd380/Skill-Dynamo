@@ -155,7 +155,7 @@ const SignUp = () => {
                 <input
                   required
                   type="text"
-                  className="bg-[#232149] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
+                  className="bg-[#1d1c3d] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
                   placeholder=" "
                   name="firstName"
                 />
@@ -168,7 +168,7 @@ const SignUp = () => {
                 <input
                   required
                   type="email"
-                  className=" bg-[#232149] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
+                  className=" bg-[#1d1c3d] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
                   placeholder=" "
                   name="email"
                 />
@@ -183,7 +183,7 @@ const SignUp = () => {
                   value={role}
                   onChange={handleRoleChange}
                   name="gender"
-                  className="px-3 w-full h-11 bg-[#232149] text-gray-500 rounded-md"
+                  className="px-3 w-full h-11 bg-[#1d1c3d] text-gray-500 rounded-md"
                   id=""
                 >
                   <option disabled value="Gender">
@@ -200,7 +200,7 @@ const SignUp = () => {
                   value={gender}
                   onChange={handleGenderChange}
                   name="gender"
-                  className="px-3 w-full h-11 bg-[#232149] text-gray-500 rounded-md"
+                  className="px-3 w-full h-11 bg-[#1d1c3d] text-gray-500 rounded-md"
                   id=""
                 >
                   <option disabled value="Gender">
@@ -214,7 +214,7 @@ const SignUp = () => {
               <div className="relative h-11 w-full">
                 <input
                   type="text"
-                  className="bg-[#232149] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
+                  className="bg-[#1d1c3d] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
                   placeholder=" "
                   name="phone"
                 />
@@ -227,7 +227,7 @@ const SignUp = () => {
                 <input
                   required
                   type="text"
-                  className="bg-[#232149] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
+                  className="bg-[#1d1c3d] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
                   placeholder=" "
                   name="photo"
                 />
@@ -241,7 +241,7 @@ const SignUp = () => {
                   required
                   // type={showPassword ? "text" : "password"}
                   type="password"
-                  className="bg-[#232149] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
+                  className="bg-[#1d1c3d] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
                   placeholder=" "
                   name="password"
                 />
@@ -259,7 +259,7 @@ const SignUp = () => {
                 <input
                   required
                   type="text"
-                  className="bg-[#232149] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
+                  className="bg-[#1d1c3d] peer h-full w-full rounded-md bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-gray-300"
                   placeholder=" "
                   name="confirmPassword"
                 />
