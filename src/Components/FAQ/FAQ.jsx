@@ -5,7 +5,7 @@ import { AccordionComponent } from "./Accordian";
 const Faq = () => {
 
     return (
-        <div className="max-w-6xl mx-auto py-20 px-5 md:px-0">
+        <div id="faq" className="max-w-6xl mx-auto py-20 px-5 md:px-0">
             <div>
             <div className="flex items-center gap-5 mb-7">
                 <div className="bg-blue-400 h-14 w-1 rounded-md"></div>

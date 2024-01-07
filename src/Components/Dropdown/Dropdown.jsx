@@ -1,6 +1,5 @@
 import { TbLogout2 } from "react-icons/tb";
 import { BiLogIn } from "react-icons/bi";
-import { FaHouseUser } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 import { useContext, useEffect, useState } from 'react';
@@ -78,6 +77,8 @@ const Dropdown = () => {
                     <Link to={"/userDashboard/teacherDashboard"} className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold mb-2 border-b border-blue-900 pb-1">Student Analysis</Link> 
 
                     <Link to={"/userDashboard/teacherDashboard"} className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold mb-2 border-b border-blue-900 pb-1">Anouncement</Link> 
+
+                    <Link to={"/helpDesk"} className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold mb-2 border-b border-blue-900 pb-1">Help Desk</Link> 
 
 
                     

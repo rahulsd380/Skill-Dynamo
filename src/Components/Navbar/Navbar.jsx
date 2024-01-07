@@ -19,7 +19,7 @@ const Navbar = () => {
   }, [url]);
 
   return (
-    <div className="px-5 shadow-lg border-b border-blue-700 md:shadow-none md:border-none">
+    <div className="px-5 shadow-lg border-b border-blue-700 md:shadow-none md:border-none sticky top-0 z-50 bg-gradient-to-r from-blue-950 via-blue-950 to-black">
       <div className="flex justify-between">
         <div className="flex items-center gap-5 md:gap-20">
         <Drawer></Drawer>
@@ -29,26 +29,26 @@ const Navbar = () => {
               src="https://i.ibb.co/MpNzNfK/skill-dynamo-logo.png"
               alt=""
             />
-            <h1 className="text-2xl font-bold text-blue-400 dark:text-green-400">Skill Dynamo</h1>
+            <h1 className="text-2xl font-bold text-blue-400">Skill Dynamo</h1>
           </div>
           
 
           <div className="hidden md:flex md:items-center md:gap-8">
             <Link
               to={"/"}
-              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
             >
               Home
             </Link>
             <Link
               to={"/allClasses"}
-              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
             >
               All Clases
             </Link>
             <Link
               to={"/"}
-              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
             >
               About Us
             </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div className="px-3 flex justify-center">
                   {/* Open the modal using document.getElementById('ID').showModal() method */}
                   <button
-                    className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+                    className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
                     onClick={() =>
                       document.getElementById("my_modal_1").showModal()
                     }
@@ -66,7 +66,7 @@ const Navbar = () => {
                   </button>
                   <dialog id="my_modal_1" className="modal">
                     <div className="modal-box bg-gradient-to-r from-blue-900 via-blue-900 to-blue-950">
-                      <h3 className="font-bold text-lg text-blue-400 mb-6 dark:text-green-400">
+                      <h3 className="font-bold text-lg text-blue-400 mb-6">
                         Support Session
                       </h3>
                       <form>
@@ -118,20 +118,20 @@ const Navbar = () => {
             )}
             <Link
               to={"/blogs"}
-              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
             >
               Blog
             </Link>
             <Link
-              to={"/"}
-              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+              to="faq"
+              className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
             >
               FAQ
             </Link>
             {newUsers?.role == "Student" && (
               <Link
                 to={"/userDashboard/studentDashboard"}
-                className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+                className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
               >
                 Dashboard
               </Link>
@@ -139,7 +139,7 @@ const Navbar = () => {
             {newUsers?.role == "admin" && (
               <Link
                 to={"/userDashboard/adminDashboardPage"}
-                className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+                className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
               >
                 Dashboard
               </Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
             {newUsers?.role == "Instructor" && (
               <Link
                 to={"/userDashboard/teacherDashboard"}
-                className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold dark:text-green-400"
+                className="hover:text-blue-400 transition duration-300 text-gray-300 font-semibold"
               >
                 Dashboard
               </Link>
@@ -163,13 +163,13 @@ const Navbar = () => {
               <div className="hidden md:flex items-center gap-5">
                 <Link
                   to={"/login"}
-                  className="bg-gradient-to-r from-sky-500 to-sky-800 px-6 py-3 rounded-lg text-white font-semibold dark:text-green-400"
+                  className="bg-gradient-to-r from-sky-500 to-sky-800 px-6 py-2 text-white font-semibold rounded-tr-2xl rounded-bl-2xl"
                 >
                   Login
                 </Link>
                 <Link
                   to={"/signup"}
-                  className="bg-gradient-to-r from-sky-500 to-sky-800 px-4 py-3 rounded-lg text-white font-semibold dark:text-green-400"
+                  className="bg-gradient-to-r from-sky-500 to-sky-800 px-4 py-2 text-white font-semibold rounded-tr-2xl rounded-bl-2xl"
                 >
                   Sign Up
                 </Link>
@@ -177,6 +177,8 @@ const Navbar = () => {
             ) : (
               ""
             )}
+
+            {/* <Button>Sign up</Button> */}
 
             <Dropdown></Dropdown>
             

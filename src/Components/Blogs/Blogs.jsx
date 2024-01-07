@@ -122,7 +122,7 @@ const Blogs = () => {
                                      <div className="p-3 border-b border-blue-500">
                                      <img className=" w-full h-72 mb-4" src={blog.img} alt="" />
                                      </div>
-                                     <div className="absolute left-3 top-3 bg-gradient-to-r from-sky-500 to-sky-800 p-2 rounded-md">
+                                     <div className="absolute left-0 top-0 rounded-br-xl bg-gradient-to-r from-sky-500 to-sky-800 p-2">
                                          <p className="text-gray-200 font-semibold">$ {blog.category}</p>
                                      </div>
                                      <h1 className=" px-3 bg-gradient-to-br from-sky-500  to-sky-600 bg-clip-text text-transparent text-xl font-bold mb-2 mt-2">{blog.title}</h1>

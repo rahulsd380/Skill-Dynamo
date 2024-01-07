@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 const axiosUser = axios.create({
-    baseURL: 'https://skill-dynamo-server.vercel.app'
+    baseURL: 'http://localhost:5000'
 })
 
 const useAxiosUser = () => {

@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import { TiTick } from "react-icons/ti";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useContext } from "react";
+import Typewriter from "typewriter-effect";
 
 const Banner = () => {
     const {user} = useContext(AuthContext);
@@ -14,7 +15,16 @@ const Banner = () => {
             <span className="text-3xl text-gray-100 font-semibold">Are you ready for your next mission..?</span></div>
             :
 
-                <h1 className="text-4xl md:text-6xl font-bold leading-[3rem] md:leading-[4rem] text-gray-100 mb-5">Upgrade Your <br /> Skills Up To <br /> <span className="bg-gradient-to-br from-sky-500  to-sky-800 bg-clip-text text-transparent">Superhero</span> Level..</h1>}
+                <h1 className="text-3xl md:text-6xl font-bold leading-[3rem] md:leading-[4rem] text-gray-100 mb-5">Upgrade Your <br /> Skills Up To <br /> <span className=" text-blue-500">
+                    <Typewriter
+            options={{
+              strings: ["Superhero Level!", "Exalted Mastery!"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+                    
+                    </span> </h1>}
                 <p className="text-white mb-5">Elevate your expertise. Empowering learners with dynamic courses, personalized paths, and hands-on projects. Unlock your potential, acquire new skills, and thrive in a future driven by continuous learning.</p>
                 
                 <div className="flex items-center">

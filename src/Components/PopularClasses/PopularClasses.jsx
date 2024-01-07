@@ -30,7 +30,7 @@ const PopularClasses = () => {
             {
                 popularCourse.map(course => <div key={course._id}>
                 <div className="relative bg-gray-700 border-2 border-blue-400 rounded-lg">
-                    <img className=" w-full h-72 mb-4" src={course.image} alt="" />
+                    <img className="border-b-2 border-blue-400 w-full h-72 mb-4" src={course.image} alt="" />
                     <div className="absolute left-3 top-3 bg-gradient-to-r from-sky-500 to-sky-800 p-2 rounded-md">
                         <p className="text-gray-200 font-semibold">$ {course.price}</p>
                     </div>

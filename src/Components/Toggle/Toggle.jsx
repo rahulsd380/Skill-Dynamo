@@ -40,7 +40,7 @@ const ThemeToggle = () => {
 
   return (
     <button
-      className={`hidden md:block p-3 rounded-md border border-blue-400 ${
+      className={`hidden md:block p-2 rounded-md border border-blue-400 ${
         isDarkMode ? ' text-2xl text-yellow-500' : 'text-2xl text-blue-400'
       } text-white font-bold focus:outline-none text-xl`}
       onClick={changeTheme, toggleTheme}
