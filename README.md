@@ -20,6 +20,8 @@ You can access the live version of this project here: [View Site](https://skill-
 - **Feature 7:** [You can also download your payment history in PDF format.]
 - **Feature 8:** [There is a "blog" button in the navbar. You can see our blogs posted by the instructors or admin.]
 - **Feature 9:** [You can search for class or any blogs.]
+- **Feature 10:** Help Desk for students: In the help desk section, student can post their problems and all users can comment on it. 
+
 
 ## Features FOR INSTRUCTORS
 - **Feature 10:** [If you are an instructor/tecaher, then you can post your class from the Dashboard menu.]

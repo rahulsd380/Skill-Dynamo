@@ -37,7 +37,6 @@ import Profile from './Components/Dashboard/UserDashboard/Pages/Profile';
 import PopularClassDetails from './Components/PopularClasses/PopularClassDetails';
 import UpdateClass from './Components/Dashboard/UserDashboard/Pages/UpdateClass';
 import HelpDesk from './Components/HelpDesk/HelpDesk';
-import PostDetails from './Components/HelpDesk/PostDetails';
 const queryClient = new QueryClient()
 
 
@@ -89,11 +88,6 @@ const router = createBrowserRouter([
       {
         path: '/helpDesk',
         element: <PrivateRoute><HelpDesk></HelpDesk></PrivateRoute>
-      },
-      {
-        path: '/postDetails/:id',
-        element: <PrivateRoute><PostDetails></PostDetails></PrivateRoute>,
-        loader : ({params}) => fetch(`http://localhost:5000/helpDeskPost/${params.id}`)
       },
     ]
   },

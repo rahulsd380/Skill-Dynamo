@@ -14,7 +14,7 @@ const AllPost = () => {
   const [allPost, setAllPost] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const url = `http://localhost:5000/helpDeskPost`;
+  const url = `https://skill-dynamo-server.vercel.app/helpDeskPost`;
 
   useEffect(() => {
     setTimeout(() => {
